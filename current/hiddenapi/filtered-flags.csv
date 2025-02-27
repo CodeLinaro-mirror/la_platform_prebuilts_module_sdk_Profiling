@@ -36,11 +36,13 @@ Landroid/os/ProfilingResult;->ERROR_FAILED_RATE_LIMIT_SYSTEM:I,public-api,sdk,sy
 Landroid/os/ProfilingResult;->ERROR_NONE:I,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->ERROR_UNKNOWN:I,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->describeContents()I,public-api,sdk,system-api,test-api
+Landroid/os/ProfilingResult;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->getErrorCode()I,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->getErrorMessage()Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->getResultFilePath()Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->getTag()Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->getTriggerType()I,public-api,sdk,system-api,test-api
+Landroid/os/ProfilingResult;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingResult;->writeToParcel(Landroid/os/Parcel;I)V,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingTrigger$Builder;-><init>(I)V,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingTrigger$Builder;->build()Landroid/os/ProfilingTrigger;,public-api,sdk,system-api,test-api
