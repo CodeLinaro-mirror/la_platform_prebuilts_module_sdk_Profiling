@@ -1,0 +1,15 @@
+android/os/IProfilingResultCallback
+android/os/IProfilingService
+android/os/ProfilingFrameworkInitializer
+android/os/ProfilingManager
+android/os/ProfilingResult
+android/os/ProfilingServiceHelper
+android/os/ProfilingTrigger
+android/os/ProfilingTriggerValueParcel
+android/os/profiling/CustomFeatureFlags
+android/os/profiling/FakeFeatureFlagsImpl
+android/os/profiling/FeatureFlags
+android/os/profiling/FeatureFlagsImpl
+android/os/profiling/Flags
+com/android/internal/profiling/com/android/modules/utils/build/SdkLevel
+com/android/internal/profiling/com/android/modules/utils/build/UnboundedSdkLevel
