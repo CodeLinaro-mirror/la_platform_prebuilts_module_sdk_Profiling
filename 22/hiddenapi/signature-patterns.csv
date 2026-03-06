@@ -1,3 +1,4 @@
+android/os/AnomalyProfilingClient
 android/os/AnomalyProfilingManager
 android/os/AnomalyRequestResult
 android/os/IProfilingAnomalyCallback
