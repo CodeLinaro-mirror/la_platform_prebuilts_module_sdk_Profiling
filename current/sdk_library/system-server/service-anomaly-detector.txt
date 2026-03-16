@@ -32,12 +32,10 @@ package com.android.os.profiling.anomaly.collector {
 package com.android.os.profiling.anomaly.collector.binder {
 
   public final class BinderSpamConfig {
-    method public int getCallCountThreshold();
     method @NonNull public int[] getCallerImportanceList();
     method @NonNull public String getInterfaceName();
     method @NonNull public String getMethodName();
     method @NonNull public int[] getUids();
-    method @NonNull public java.time.Duration getWindowSize();
   }
 
   public final class BinderSpamConfigList implements com.android.os.profiling.anomaly.collector.SignalCollectorConfig {

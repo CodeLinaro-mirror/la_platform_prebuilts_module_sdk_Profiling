@@ -119,6 +119,7 @@ Landroid/os/profiling/anomaly/Rule;->getAnomalyActions()Ljava/util/List;,system-
 Landroid/os/profiling/anomaly/Rule;->getConditionType()Ljava/lang/String;,system-api,test-api
 Landroid/os/profiling/anomaly/Rule;->getName()Ljava/lang/String;,system-api,test-api
 Landroid/os/profiling/anomaly/Rule;->getRuleCondition()Landroid/os/Bundle;,system-api,test-api
+Landroid/os/profiling/anomaly/RuleInternal;->ACTION_TYPE_COLLECT_PROFILE:I,system-api,test-api
 Landroid/os/profiling/anomaly/RuleInternal;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/os/profiling/anomaly/RuleInternal;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/os/profiling/anomaly/RuleParcel$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
