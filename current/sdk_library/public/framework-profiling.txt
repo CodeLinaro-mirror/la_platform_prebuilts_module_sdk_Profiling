@@ -39,13 +39,18 @@ package android.os {
   public final class ProfilingTrigger {
     method public int getRateLimitingPeriodHours();
     method public int getTriggerType();
+    field public static final int TRIGGER_TYPE_ANOMALY = 8; // 0x8
     field public static final int TRIGGER_TYPE_ANR = 2; // 0x2
+    field public static final int TRIGGER_TYPE_APP_COMPAT = 11; // 0xb
     field public static final int TRIGGER_TYPE_APP_FULLY_DRAWN = 1; // 0x1
     field public static final int TRIGGER_TYPE_APP_REQUEST_RUNNING_TRACE = 3; // 0x3
+    field public static final int TRIGGER_TYPE_COLD_START = 10; // 0xa
+    field public static final int TRIGGER_TYPE_KILL_EXCESSIVE_CPU_USAGE = 9; // 0x9
     field public static final int TRIGGER_TYPE_KILL_FORCE_STOP = 4; // 0x4
     field public static final int TRIGGER_TYPE_KILL_RECENTS = 5; // 0x5
     field public static final int TRIGGER_TYPE_KILL_TASK_MANAGER = 6; // 0x6
     field public static final int TRIGGER_TYPE_NONE = 0; // 0x0
+    field public static final int TRIGGER_TYPE_OOM = 7; // 0x7
   }
 
   public static final class ProfilingTrigger.Builder {
