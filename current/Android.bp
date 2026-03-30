@@ -88,7 +88,6 @@ java_sdk_library_import {
         "android.app",
         "android.os.profiling.anomaly",
         "android.util",
-        "com.android.modules.utils.build",
         "com.android.internal.profiling.anomaly",
     ],
     public: {
