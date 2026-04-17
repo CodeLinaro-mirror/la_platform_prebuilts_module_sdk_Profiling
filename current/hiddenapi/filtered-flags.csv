@@ -20,10 +20,10 @@ Landroid/os/ProfilingManager$$ExternalSyntheticLambda1;->run()V,core-platform-ap
 Landroid/os/ProfilingManager$$ExternalSyntheticLambda2;->onCancel()V,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/os/ProfilingManager$$ExternalSyntheticLambda5;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager$1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager$2;->accept(Ljava/io/File;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager$3$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/os/ProfilingManager$AnrWarningListenerFactory$$ExternalSyntheticLambda0;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager;->PROFILING_TYPE_HEAP_PROFILE:I,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager;->PROFILING_TYPE_JAVA_HEAP_DUMP:I,public-api,sdk,system-api,test-api
 Landroid/os/ProfilingManager;->PROFILING_TYPE_STACK_SAMPLING:I,public-api,sdk,system-api,test-api
