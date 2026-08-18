@@ -98,5 +98,6 @@ prebuilt_systemserverclasspath_fragment {
     visibility: ["//visibility:public"],
     apex_available: ["com.android.profiling"],
     licenses: ["profiling-module-sdk_Android-Apache-2.0"],
+    contents: [],
     standalone_contents: ["service-profiling"],
 }
