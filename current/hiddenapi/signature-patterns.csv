@@ -16,8 +16,9 @@ android/os/profiling/anomaly/AnomalyDetectorFrameworkInitializer
 android/os/profiling/anomaly/AnomalyDetectorManager
 android/os/profiling/anomaly/IAnomalyDetectorService
 android/os/profiling/anomaly/Rule
+android/os/profiling/anomaly/RuleInternal
 android/os/profiling/anomaly/RuleParcel
-android/os/profiling/anomaly/jarjar/android/os/profiling/anomaly/beta/flags/Flags
+android/os/profiling/anomaly/beta/flags/Flags
 android/os/profiling/anomaly/jarjar/android/os/profiling/anomaly/flags/Flags
 android/os/profiling/anomaly/jarjar/com/android/modules/utils/build/SdkLevel
 android/os/profiling/anomaly/jarjar/com/android/modules/utils/build/UnboundedSdkLevel

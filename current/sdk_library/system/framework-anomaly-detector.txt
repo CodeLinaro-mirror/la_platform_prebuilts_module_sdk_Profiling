@@ -5,18 +5,12 @@ package android.os.profiling.anomaly {
     method @RequiresPermission(android.Manifest.permission.CONFIGURE_ANOMALY_DETECTOR) public void setAnomalyDetectorRules(@NonNull java.util.Set<android.os.profiling.anomaly.Rule>);
   }
 
-  public final class Rule implements android.os.Parcelable {
-    method public int describeContents();
+  public final class Rule {
     method @NonNull public java.util.List<java.lang.Integer> getAnomalyActions();
     method @NonNull public String getConditionType();
-    method @NonNull public byte[] getConfig();
     method @NonNull public String getName();
     method @NonNull public android.os.Bundle getRuleCondition();
-    method public long getRuleId();
-    method public void writeToParcel(@NonNull android.os.Parcel, int);
     field public static final int ACTION_TYPE_COLLECT_PROFILE = 2; // 0x2
-    field public static final int ACTION_TYPE_CRASH = 3; // 0x3
-    field public static final int ACTION_TYPE_KILL = 4; // 0x4
     field public static final int ACTION_TYPE_LOG = 1; // 0x1
     field public static final String BUNDLE_KEY_CONDITION_BINDER_SPAM_BINDER_CALL_INTERVAL_MILLIS = "android.os.profiling.anomaly.Rule.binder_call_interval_millis";
     field public static final String BUNDLE_KEY_CONDITION_BINDER_SPAM_CALL_LIMIT = "android.os.profiling.anomaly.Rule.binder_call_limit";
@@ -24,11 +18,6 @@ package android.os.profiling.anomaly {
     field public static final String BUNDLE_KEY_CONDITION_BINDER_SPAM_METHOD_NAME = "android.os.profiling.anomaly.Rule.binder_method_name";
     field public static final String BUNDLE_KEY_PROFILING_SESSION_DURATION_MILLIS = "android.os.profiling.anomaly.Rule.profiling_session_duration_millis";
     field public static final String CONDITION_TYPE_BINDER_SPAM = "android.os.profiling.anomaly.Rule.binder_spam";
-    field public static final String CONDITION_TYPE_FLEXIBLE_RULE = "android.os.profiling.anomaly.Rule.flexible_rule";
-    field @NonNull public static final android.os.Parcelable.Creator<android.os.profiling.anomaly.Rule> CREATOR;
-    field public static final String REPORT_KEY_PROFILING_DURATION_MILLIS = "profiling_duration_ms";
-    field public static final String REPORT_KEY_SIGNATURE_FIELDS = "signature_fields";
-    field public static final String REPORT_KEY_SUMMARY_TEMPLATE = "summary_template";
   }
 
   public static final class Rule.Builder {
@@ -36,10 +25,8 @@ package android.os.profiling.anomaly {
     method @NonNull public android.os.profiling.anomaly.Rule.Builder addAnomalyAction(int);
     method @NonNull public android.os.profiling.anomaly.Rule build();
     method @NonNull public android.os.profiling.anomaly.Rule.Builder setConditionType(@NonNull String);
-    method @NonNull public android.os.profiling.anomaly.Rule.Builder setConfig(@NonNull byte[]);
     method @NonNull public android.os.profiling.anomaly.Rule.Builder setName(@NonNull String);
     method @NonNull public android.os.profiling.anomaly.Rule.Builder setRuleCondition(@NonNull android.os.Bundle);
-    method @NonNull public android.os.profiling.anomaly.Rule.Builder setRuleId(long);
   }
 
 }

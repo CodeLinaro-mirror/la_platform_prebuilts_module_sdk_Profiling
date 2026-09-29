@@ -3,32 +3,17 @@ package com.android.os.profiling.anomaly {
 
   public interface AnomalyDetectorManagerLocal {
     method public <T extends com.android.os.profiling.anomaly.collector.SignalCollectorConfig, U extends com.android.os.profiling.anomaly.collector.SignalCollectorData> void registerSignalCollector(@NonNull Class<T>, @NonNull Class<U>, @NonNull com.android.os.profiling.anomaly.collector.SignalCollector<T,U>);
-    method public void registerSignalCollector(@NonNull String, @NonNull com.android.os.profiling.anomaly.collector.SignalCollector<com.android.os.profiling.anomaly.collector.FlexibleConfig,com.android.os.profiling.anomaly.collector.FlexibleData>);
     method public <T extends com.android.os.profiling.anomaly.collector.SignalCollectorConfig, U extends com.android.os.profiling.anomaly.collector.SignalCollectorData> void unregisterSignalCollector(@NonNull Class<T>, @NonNull Class<U>);
-    method public void unregisterSignalCollector(@NonNull String);
   }
 
 }
 
 package com.android.os.profiling.anomaly.collector {
 
-  public final class FlexibleConfig implements com.android.os.profiling.anomaly.collector.SignalCollectorConfig {
-    method @NonNull public android.os.Bundle getParams();
-  }
-
-  public final class FlexibleData implements com.android.os.profiling.anomaly.collector.SignalCollectorData {
-    ctor public FlexibleData(long, int, @NonNull android.os.Bundle);
-    method @NonNull public android.os.Bundle getPayload();
-    method public long getTimestampMillis();
-    method public int getUid();
-  }
-
   public interface SignalCollector<T extends com.android.os.profiling.anomaly.collector.SignalCollectorConfig, U extends com.android.os.profiling.anomaly.collector.SignalCollectorData> {
     method @Nullable public U getData(@NonNull com.android.os.profiling.anomaly.collector.SubscriptionId);
-    method @Nullable public default U getData(@NonNull com.android.os.profiling.anomaly.collector.SubscriptionId, @Nullable android.os.Bundle);
     method public void requestUpdate(@NonNull com.android.os.profiling.anomaly.collector.SubscriptionId);
     method @NonNull public com.android.os.profiling.anomaly.collector.SubscriptionId subscribe(@NonNull T, @NonNull android.os.OutcomeReceiver<U,java.lang.Throwable>);
-    method @NonNull public default com.android.os.profiling.anomaly.collector.SubscriptionId subscribe(@NonNull T);
     method public void unsubscribe(@NonNull com.android.os.profiling.anomaly.collector.SubscriptionId);
   }
 
